@@ -9,19 +9,10 @@
       }
     }
   ],
-  {
-   "rewrites":  [
-       {"source": "/(.*)", "destination": "/"}
-    ]
-  }
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/dist/index.html"
-    },
-    {
-      "src": "/(.*).(js|css|jpg|png|svg|woff|woff2|ttf)",
-      "dest": "/dist/$1.$2"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

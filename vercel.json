@@ -2,11 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "public/*",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],
@@ -14,15 +10,6 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://your-api-endpoint/:path*"
     }
   ]
 }

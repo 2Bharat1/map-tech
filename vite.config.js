@@ -1,9 +1,11 @@
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-export default {
-  plugins: [react()],
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist',
-    // Other Vite build options
+    outDir: 'dist',  // Ensure build outputs to the "dist" folder
   },
-};
+})

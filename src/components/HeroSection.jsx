@@ -1,195 +1,107 @@
-import {
-  FaUsers,
-  FaLightbulb,
-  FaProjectDiagram,
-  FaCode,
-  FaMobileAlt,
-  FaGlobe,
-  FaCloud,
-  FaShieldAlt,
-  FaBullhorn,
-  FaTasks,
-  FaCodeBranch,
-  FaSyncAlt,
-  FaCheckCircle,
-  FaUsersCog,
-  FaUikit,
-} from "react-icons/fa";
-import { motion } from "framer-motion";
-import { FaBagShopping, FaWebflow } from "react-icons/fa6";
-
-const HowWeWork = () => {
-  return (
-    <section className=" py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-          How We Work at <span className="text-purple-700">MapTech Agency</span>
-        </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
-          MapTech Agency acts as a bridge between international clients and our
-          expert developers in Nepal. You can either:
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white shadow-lg rounded-lg p-6 flex items-start gap-4 hover:shadow-xl transition-shadow duration-300">
-            <FaUsers className="text-purple-700 text-4xl" />
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900">
-                Hire Dedicated Designers & Developers
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Work directly with skilled professionals for your project.
+const HeroSection = () => {
+    return (
+      <>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center justify-between py-20">
+            <div class="md:w-1/2 space-y-6">
+              <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+              Bridging Ideas, Building Futures
+              </h1>
+              <p class="text-xl text-gray-600 max-w-lg">
+                Your Trusted IT Partner for Website & App Development<br />
+                
               </p>
-            </div>
-          </div>
-
-          <div className="bg-white shadow-lg rounded-lg p-6 flex items-start gap-4 hover:shadow-xl transition-shadow duration-300">
-            <FaProjectDiagram className="text-purple-700 text-4xl" />
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900">
-                Assign Your Project
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Let our expert team manage and develop your website or app from
-                start to finish.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const Services = () => {
-  const services = [
-    {
-      icon: <FaCode />,
-      title: "Web Development",
-      description: "Custom websites & web apps with modern technologies.",
-    },
-    {
-      icon: <FaBagShopping />,
-      title: "E commerece",
-      description: "Make modern and fully responsive ecommerce website.",
-    },
-    {
-      icon: <FaMobileAlt />,
-      title: "Mobile App Development",
-      description: "Android & iOS app development with top frameworks.",
-    },
-    {
-      icon: <FaGlobe />,
-      title: "UI/UX Design",
-      description:
-        "Beautiful, user-friendly interfaces tailopurple to your needs.",
-    },
-  ];
-
-  return (
-    <section className="bg-gray-100 py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-          Our <span className="text-purple-700">Services</span>
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 shadow-lg rounded-lg p-6 flex items-start gap-4 hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="text-purple-700 text-4xl">{service.icon}</div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mt-2">{service.description}</p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="px-8 py-4 bg-purple-800 text-white rounded-full font-medium hover:bg-blue-900 transition-colors shadow-md"
+                >
+                  Get Started
+                </a>
+                <a
+                  href="#"
+                  class="px-8 py-4 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
-          ))}
+  
+            <div class="md:w-1/2 mt-12 md:mt-0 animate-float">
+              <svg
+                viewBox="0 0 400 300"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full max-w-lg"
+              >
+                <rect
+                  x="50"
+                  y="50"
+                  width="300"
+                  height="200"
+                  rx="20"
+                  fill="#1e293b"
+                  filter="url(#shadow)"
+                />
+  
+                <rect
+                  x="70"
+                  y="80"
+                  width="150"
+                  height="20"
+                  rx="4"
+                  fill="#38bdf8"
+                />
+                <rect
+                  x="70"
+                  y="110"
+                  width="220"
+                  height="20"
+                  rx="4"
+                  fill="#f472b6"
+                  opacity="0.8"
+                />
+                <rect
+                  x="70"
+                  y="140"
+                  width="180"
+                  height="20"
+                  rx="4"
+                  fill="#a78bfa"
+                  opacity="0.7"
+                />
+                <rect
+                  x="70"
+                  y="170"
+                  width="200"
+                  height="20"
+                  rx="4"
+                  fill="#fbbf24"
+                  opacity="0.6"
+                />
+  
+                <circle cx="320" cy="70" r="8" fill="#ec4899" />
+                <circle cx="340" cy="70" r="8" fill="#22d3ee" />
+                <circle cx="360" cy="70" r="8" fill="#a3e635" />
+  
+                <defs>
+                  <filter id="shadow" x="0" y="0" width="500" height="500">
+                    <feOffset result="offOut" in="SourceGraphic" dx="4" dy="4" />
+                    <feGaussianBlur
+                      result="blurOut"
+                      in="offOut"
+                      stdDeviation="4"
+                    />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-  );
-};
-
-const AgileDevelopment = () => {
-  const steps = [
-    {
-      icon: <FaLightbulb />,
-      title: "Idea & Planning",
-      description: "Brainstorming and defining project goals.",
-    },
-    {
-      icon: <FaTasks />,
-      title: "Backlog Creation",
-      description: "Listing tasks and prioritizing development items.",
-    },
-    {
-      icon: <FaCodeBranch />,
-      title: "Development Sprints",
-      description: "Iterative coding with regular feedback loops.",
-    },
-    {
-      icon: <FaUsersCog />,
-      title: "Team Collaboration",
-      description: "Developers, designers & testers working together.",
-    },
-    {
-      icon: <FaSyncAlt />,
-      title: "Continuous Integration",
-      description: "Frequent testing and merging code for stability.",
-    },
-    {
-      icon: <FaCheckCircle />,
-      title: "Delivery & Feedback",
-      description: "Deploying & refining based on user feedback.",
-    },
-  ];
-
-  return (
-    <section className="bg-gray-50 py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-          Agile <span className="text-purple-700">Development</span> Process
-        </h2>
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-10">
-          We follow a structured Agile methodology, ensuring flexibility,
-          collaboration, and continuous improvement at every step.
-        </p>
-
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              className="relative bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center border-t-4 border-purple-700 hover:shadow-2xl transition-shadow duration-300"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="absolute -top-7 w-14 h-14 bg-purple-700 text-white flex items-center justify-center rounded-full shadow-lg text-2xl">
-                {step.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mt-8">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 mt-2">{step.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const OurWork = () => {
-  return (
-    <div>
-      <HowWeWork />
-      <Services />
-      <AgileDevelopment />
-    </div>
-  );
-};
-
-export default OurWork;
+      </>
+    );
+  };
+  
+  export default HeroSection;
+  

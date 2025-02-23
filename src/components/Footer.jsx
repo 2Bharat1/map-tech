@@ -5,6 +5,8 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
+  FaFacebook,
+  FaInstagram,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -20,14 +22,11 @@ const Footer = () => {
               solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaLinkedin className="text-2xl" />
+              <a href="https://www.facebook.com/MapTech.Agency" className="text-gray-300 hover:text-white">
+                <FaFacebook className="text-2xl" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaTwitter className="text-2xl" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <FaGithub className="text-2xl" />
+              <a href="https://www.instagram.com/MapTech.Agency" className="text-gray-300 hover:text-white">
+                <FaInstagram className="text-2xl" />
               </a>
             </div>
           </div>
@@ -61,15 +60,16 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="text-gray-400 flex justify-center md:justify-start items-center">
                 <FaMapMarkerAlt className="mr-3 text-gray-300" />
-                123 Innovation Street, Tech City
+                905 - 4727 Sheppard Ave E, Scarborough, ON
+                Zip Code: M1S 5B3
               </p>
               <p className="text-gray-400 flex justify-center md:justify-start items-center">
                 <FaEnvelope className="mr-3 text-gray-300" />
-                contact@techinnovators.com
+                info@maptech.agency
               </p>
               <p className="text-gray-400 flex justify-center md:justify-start items-center">
                 <FaPhone className="mr-3 text-gray-300" />
-                +1 (555) 123-4567
+                +1 (437) 997-7191
               </p>
             </div>
           </div>

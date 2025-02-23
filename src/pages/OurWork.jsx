@@ -13,8 +13,10 @@ import {
   FaSyncAlt,
   FaCheckCircle,
   FaUsersCog,
+  FaUikit,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { FaBagShopping, FaWebflow } from "react-icons/fa6";
 
 const HowWeWork = () => {
   return (
@@ -67,6 +69,11 @@ const Services = () => {
       description: "Custom websites & web apps with modern technologies.",
     },
     {
+      icon: <FaBagShopping />,
+      title: "E commerece",
+      description: "Make modern and fully responsive ecommerce website.",
+    },
+    {
       icon: <FaMobileAlt />,
       title: "Mobile App Development",
       description: "Android & iOS app development with top frameworks.",
@@ -76,22 +83,6 @@ const Services = () => {
       title: "UI/UX Design",
       description:
         "Beautiful, user-friendly interfaces tailopurple to your needs.",
-    },
-    {
-      icon: <FaCloud />,
-      title: "Cloud Solutions",
-      description:
-        "Secure cloud-based solutions for scalability & performance.",
-    },
-    {
-      icon: <FaShieldAlt />,
-      title: "Cybersecurity",
-      description: "Protect your digital assets with top security solutions.",
-    },
-    {
-      icon: <FaBullhorn />,
-      title: "Digital Marketing",
-      description: "SEO, social media & PPC marketing for business growth.",
     },
   ];
 

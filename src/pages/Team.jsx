@@ -2,37 +2,19 @@ import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 const teamMembers = [
   {
-    name: "John Doe",
-    role: "CEO & Founder",
-    image: "https://via.placeholder.com/150",
+    name: "Man Bahadur Roka",
+    role: "Business Consultant",
     linkedin: "#",
     twitter: "#",
     github: "#",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
-    image: "https://via.placeholder.com/150",
+    name: "Nishan Roka",
+    role: "IT Consultant",
     linkedin: "#",
     twitter: "#",
-    github: "#",
   },
-  {
-    name: "Emily Johnson",
-    role: "Lead Designer",
-    image: "https://via.placeholder.com/150",
-    linkedin: "#",
-    twitter: "#",
-    github: "#",
-  },
-  {
-    name: "Michael Brown",
-    role: "Senior Developer",
-    image: "https://via.placeholder.com/150",
-    linkedin: "#",
-    twitter: "#",
-    github: "#",
-  },
+  
 ];
 
 const Team = () => {
@@ -61,7 +43,7 @@ const Team = () => {
               <p className="text-gray-600">{member.role}</p>
 
               <div className="flex justify-center gap-4 mt-4">
-                <a href={member.linkedin} className="text-blue-700 hover:text-blue-900 transition">
+                {/* <a href={member.linkedin} className="text-blue-700 hover:text-blue-900 transition">
                   <FaLinkedin className="text-xl" />
                 </a>
                 <a href={member.twitter} className="text-blue-500 hover:text-blue-700 transition">
@@ -69,7 +51,7 @@ const Team = () => {
                 </a>
                 <a href={member.github} className="text-gray-800 hover:text-gray-900 transition">
                   <FaGithub className="text-xl" />
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

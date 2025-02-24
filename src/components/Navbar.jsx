@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center flex-shrink-0">
-            <img src="./logo.svg" alt="Logo" height={40} width={170} />
+            <img src="./logo.svg" alt="Logo" height={40} width={180} />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -32,7 +32,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center">
             <a
-              href="#"
+              href="/contact"
               className="inline-flex items-center px-6 py-3 rounded-full font-medium bg-purple-800 text-white hover:bg-blue-900 transform hover:scale-105 transition-all duration-200 shadow-md"
             >
               Start Building
@@ -82,7 +82,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#"
+              href="/contact"
               className="inline-flex items-center px-6 py-3 rounded-full font-medium bg-purple-800 text-white hover:bg-blue-900 transform hover:scale-105 transition-all duration-200 shadow-md"
             >
               Start Building

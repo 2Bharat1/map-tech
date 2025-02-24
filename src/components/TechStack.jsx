@@ -471,7 +471,7 @@ const TechStack = () => {
 
           <div class="text-center mt-12">
             <a
-              href="#contact"
+              href="/contact"
               class="inline-block bg-purple-800 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
             >
               Get Started Today

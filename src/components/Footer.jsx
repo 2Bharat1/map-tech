@@ -88,6 +88,31 @@ const Footer = () => {
                 </a>
               </p>
             </div>
+
+            {/* Nepal Contact Info */}
+            <div className="mt-8">
+              <h3 className="text-xl font-bold mb-4">Nepal Office</h3>
+              <div className="space-y-3">
+                <p className="text-gray-400 flex justify-start">
+                  <FaMapMarkerAlt className="mr-3 text-gray-300" />
+                  <span className="text-gray-500">
+                    Kathmandu, Nepal
+                  </span>
+                </p>
+                <p className="text-gray-400 flex justify-start">
+                  <FaEnvelope className="mr-3 text-gray-300" />
+                  <a href="mailto:info@maptech.agency" className="text-gray-500">
+                    info@maptech.agency
+                  </a>
+                </p>
+                <p className="text-gray-400 flex justify-start">
+                  <FaPhone className="mr-3 text-gray-300" />
+                  <a href="tel:+9779851033907" className="text-gray-500">
+                    +977-9851033907
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

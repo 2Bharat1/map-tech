@@ -6,7 +6,7 @@ const Aboutus = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="about/about.jpg"
+                src="about_1/about.jpg"
                 alt="Team collaboration"
                 className="rounded-lg shadow-lg w-full"
               />

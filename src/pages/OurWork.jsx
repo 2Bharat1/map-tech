@@ -21,7 +21,7 @@ import { FaBagShopping, FaWebflow } from "react-icons/fa6";
 const HowWeWork = () => {
   return (
     <section className=" py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto md:text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
           How We Work at <span className="text-purple-700">MapTech Agency</span>
         </h2>
@@ -88,7 +88,7 @@ const Services = () => {
 
   return (
     <section className="bg-gray-100 py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto md:text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
           Our <span className="text-purple-700">Services</span>
         </h2>
@@ -150,7 +150,7 @@ const AgileDevelopment = () => {
 
   return (
     <section className="bg-gray-50 py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto md:text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
           Agile <span className="text-purple-700">Development</span> Process
         </h2>
@@ -163,7 +163,7 @@ const AgileDevelopment = () => {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="relative bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center border-t-4 border-purple-700 hover:shadow-2xl transition-shadow duration-300"
+              className="relative bg-white shadow-lg rounded-xl p-6 flex flex-col items-center md:text-center border-t-4 border-purple-700 hover:shadow-2xl transition-shadow duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >

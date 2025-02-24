@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Map Tech Agency.</h3>
@@ -21,7 +21,7 @@ const Footer = () => {
               Driving innovation through cutting-edge technology and creative
               solutions.
             </p>
-            <div className="flex justify-center md:justify-start space-x-4 mt-4">
+            <div className="flex justify-start space-x-4 mt-4">
               <a href="https://www.facebook.com/MapTech.Agency" className="text-gray-300 hover:text-white">
                 <FaFacebook className="text-2xl" />
               </a>
@@ -58,16 +58,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <p className="text-gray-400 flex justify-center md:justify-start items-center">
+              <p className="text-gray-400 flex justify-start ">
                 <FaMapMarkerAlt className="mr-3 text-gray-300" />
                 905 - 4727 Sheppard Ave E, Scarborough, ON
                 Zip Code: M1S 5B3
               </p>
-              <p className="text-gray-400 flex justify-center md:justify-start items-center">
+              <p className="text-gray-400 flex justify-start ">
                 <FaEnvelope className="mr-3 text-gray-300" />
                 info@maptech.agency
               </p>
-              <p className="text-gray-400 flex justify-center md:justify-start items-center">
+              <p className="text-gray-400 flex justify-start ">
                 <FaPhone className="mr-3 text-gray-300" />
                 +1 (437) 997-7191
               </p>

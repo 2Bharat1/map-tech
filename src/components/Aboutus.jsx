@@ -3,7 +3,7 @@ const Aboutus = () => {
     <>
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto md:text-center mb-16">
             <span className="text-purple-800 font-semibold tracking-wide uppercase">
               About Us
             </span>
@@ -17,17 +17,17 @@ const Aboutus = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
+            <div className="md:text-center">
               <div className="text-4xl font-bold text-purple-800 mb-2">
                 500+
               </div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
-            <div className="text-center">
+            <div className="md:text-center">
               <div className="text-4xl font-bold text-purple-800 mb-2">50+</div>
               <div className="text-gray-600">Team Members</div>
             </div>
-            <div className="text-center">
+            <div className="md:text-center">
               <div className="text-4xl font-bold text-purple-800 mb-2">95%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>

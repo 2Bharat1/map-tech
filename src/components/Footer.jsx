@@ -1,89 +1,97 @@
-import {
-  FaLinkedin,
-  FaTwitter,
-  FaGithub,
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa";
+import { useState } from "react";
 
-const Footer = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <footer className="bg-gray-900 text-white py-12 px-6">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {/* Company Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Map Tech Agency.</h3>
-            <p className="text-gray-400 text-sm">
-              Driving innovation through cutting-edge technology and creative
-              solutions.
-            </p>
-            <div className="flex justify-start space-x-4 mt-4">
-              <a href="https://www.facebook.com/MapTech.Agency" className="text-gray-300 hover:text-white">
-                <FaFacebook className="text-2xl" />
+    <nav className="bg-white border-b border-gray-100">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center flex-shrink-0">
+            <img src="./logo.svg" alt="Logo" height={40} width={180} />
+          </div>
+
+          <div className="hidden md:flex items-center space-x-8">
+            {[
+              { name: "Home", href: "/" },
+              { name: "About", href: "/about" },
+              { name: "Our Team", href: "/our-team" },
+              { name: "Projects", href: "/projects" },
+              { name: "How We Work", href: "/how-we-work" },
+              { name: "Contact", href: "/contact" },
+            ].map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="nav-link text-gray-600 font-medium transition-colors hover:text-gray-900"
+              >
+                {link.name}
               </a>
-              <a href="https://www.instagram.com/MapTech.Agency" className="text-gray-300 hover:text-white">
-                <FaInstagram className="text-2xl" />
-              </a>
-            </div>
+            ))}
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {[
-                { name: "Home", path: "/home" },
-                { name: "Projects", path: "/projects" },
-                { name: "About Us", path: "/about" },
-                { name: "Services", path: "/how-we-work" },
-                { name: "Contact", path: "/contact" },
-              ].map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.path}
-                    className="text-gray-400 hover:text-white"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="hidden md:flex items-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 rounded-full font-medium bg-purple-800 text-white hover:bg-blue-900 transform hover:scale-105 transition-all duration-200 shadow-md"
+            >
+              Start Building
+            </a>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <div className="space-y-3">
-              <p className="text-gray-400 flex justify-start ">
-                <FaMapMarkerAlt className="mr-3 text-gray-300" />
-                905 - 4727 Sheppard Ave E, Scarborough, ON
-                Zip Code: M1S 5B3
-              </p>
-              <p className="text-gray-400 flex justify-start ">
-                <FaEnvelope className="mr-3 text-gray-300" />
-                info@maptech.agency
-              </p>
-              <p className="text-gray-400 flex justify-start ">
-                <FaPhone className="mr-3 text-gray-300" />
-                +1 (437) 997-7191
-              </p>
-            </div>
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                />
+              </svg>
+            </button>
           </div>
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p className="text-gray-500 text-sm">
-            © 2025 M.A.P. Tech Agency All Rights Reserved.
-          </p>
         </div>
       </div>
-    </footer>
+
+      {isOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100">
+          <div className="p-4 flex flex-col space-y-4">
+            {[
+              { name: "Home", href: "/" },
+              { name: "About", href: "/about" },
+              { name: "Our Team", href: "/our-team" },
+              { name: "Projects", href: "/projects" },
+              { name: "How We Work", href: "/how-we-work" },
+              { name: "Contact", href: "/contact" },
+            ].map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-gray-600 font-medium transition-colors hover:text-gray-900"
+              >
+                {link.name}
+              </a>
+            ))}
+            <a
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 rounded-full font-medium bg-purple-800 text-white hover:bg-blue-900 transform hover:scale-105 transition-all duration-200 shadow-md"
+            >
+              Start Building
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 };
 
-export default Footer;
+export default Navbar;

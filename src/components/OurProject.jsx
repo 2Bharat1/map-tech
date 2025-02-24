@@ -2,23 +2,23 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Ecommerece website",
-    category: "Ecommerece website",
+    title: "Nepal petrol lube website",
+    category: "CMS",
     image: "/ecomm__site.png",
-    link: "#",
+    link: "https://nepalpetrolube.com/",
   },
   
   {
-    title: "News portal site",
+    title: "nepaltoursdestination",
     category: "CMS",
-    image: "newsportal__site.png",
-    link: "#",
+    image: "newsportal_site.png",
+    link: "https://nepaltoursdestination.com/",
   },
   {
-    title: "Order Management",
-    category: "OMS",
+    title: "Manakamana Treks",
+    category: "CMS",
     image: "order__site.png",
-    link: "#",
+    link: "https://manakamanaexpedition.com/",
   },
 ];
 

@@ -4,6 +4,7 @@ const teamMembers = [
   {
     name: "Man Bahadur Roka",
     role: "Business Consultant",
+    image: '../../../member_2.jpeg',
     linkedin: "#",
     twitter: "#",
     github: "#",
@@ -11,6 +12,7 @@ const teamMembers = [
   {
     name: "Nishan Roka",
     role: "IT Consultant",
+    image: '../../../member_1.jpeg',
     linkedin: "#",
     twitter: "#",
   },
@@ -37,7 +39,7 @@ const Team = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
+                className="w-28 h-34 mx-auto rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>

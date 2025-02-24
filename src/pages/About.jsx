@@ -1,7 +1,6 @@
 import Aboutus from "../components/Aboutus";
 import TechStack from "../components/TechStack";
-import WhyChooseUs
- from "../components/WhyChooseus";
+import WhyChooseUs from "../components/WhyChooseus";
 const About = () => {
   return (
     <>

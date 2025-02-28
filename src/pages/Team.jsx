@@ -71,7 +71,7 @@ const Team = () => {
           ))}
         </div>
         {/* Highlighted Text */}
-        <p className="text-gray-700 text-lg max-w-3xl mx-auto mb-10 font-semibold bg-yellow-100 p-4 rounded-lg shadow-md">
+        <p className="text-gray-700 mt-10 text-lg max-w-3xl mx-auto mb-10 font-semibold bg-yellow-100 p-4 rounded-lg shadow-md">
           We manage and execute projects with our in-house designers and developers based in 
           <span className="text-purple-700 font-bold"> Kathmandu, Nepal</span>, ensuring high-quality development. 
           Our team delivers <span className="text-purple-700 font-bold">cost-effective solutions</span> while maintaining global standards.

@@ -31,7 +31,7 @@ const teamMembers = [
   { name: "Nabin Shrestha", role: "UI/UX Expert / Video Editor", image: "../../../member_7.png", linkedin: "#", twitter: "#" },
   { name: "Abishek Prajapati", role: "Creative Head", image: "../../../member_5.png", linkedin: "#", twitter: "#" },
   { name: "Pranab KC", role: "Software Developer", image: "../../../member_8.png", linkedin: "#", twitter: "#" },
-  { name: "Sumit Nhemhafuki", role: "WordPress Developer", image: "../../../member_10.png", linkedin: "#", twitter: "#" },
+  { name: "Samit Nhemhafuki", role: "WordPress Developer", image: "../../../member_10.png", linkedin: "#", twitter: "#" },
   { name: "Pawan Bhattarai", role: "QA", image: "../../../member_9.png", linkedin: "#", twitter: "#" },
   { name: "Alish Prajapati", role: "Content Writer / SEO Expert", image: "../../../member_4.png", linkedin: "#", twitter: "#" }
 ];

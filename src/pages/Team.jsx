@@ -26,7 +26,7 @@ const teamMembers = [
     twitter: "#",
     contact: "San Francisco Bay Area, USA | 510 673 5430"
   },
-  { name: "Shekhar Ghimire", role: "AI/ML Engineer", image: "", linkedin: "#", twitter: "#" },
+  { name: "Shekhar Ghimire", role: "AI/ML Engineer", image: "../../../member_11.png", linkedin: "#", twitter: "#" },
   { name: "Anil Nhemhafuki", role: "MERN Stack Developer", image: "../../../member_6.png", linkedin: "#", twitter: "#" },
   { name: "Nabin Shrestha", role: "UI/UX Expert / Video Editor", image: "../../../member_7.png", linkedin: "#", twitter: "#" },
   { name: "Abishek Prajapati", role: "Creative Head", image: "../../../member_5.png", linkedin: "#", twitter: "#" },

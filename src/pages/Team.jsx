@@ -26,14 +26,14 @@ const teamMembers = [
     twitter: "#",
     contact: "San Francisco Bay Area, USA | 510 673 5430"
   },
-  { name: "Shekhar Ghimire", role: "AI/ML Engineer", image: "../../../member_4.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Pranab KC", role: "Software Developer", image: "../../../member_9.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Anil Nhemhafuki", role: "MERN Stack Developer", image: "../../../member_6.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Nabin Shrestha", role: "UI/UX Expert / Video Editor", image: "../../../member_7.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Abishek Prajapati", role: "Creative Head", image: "../../../member_5.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Sumit Nhemhafuki", role: "WordPress Developer", image: "../../../member_8.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Pawan Bhattarai", role: "QA", image: "../../../member_10.jpeg", linkedin: "#", twitter: "#" },
-  { name: "Alish Prajapati", role: "Content Writer / SEO Expert", image: "../../../member_4.jpeg", linkedin: "#", twitter: "#" }
+  { name: "Shekhar Ghimire", role: "AI/ML Engineer", image: "../../../member_4.png", linkedin: "#", twitter: "#" },
+  { name: "Pranab KC", role: "Software Developer", image: "../../../member_9.png", linkedin: "#", twitter: "#" },
+  { name: "Anil Nhemhafuki", role: "MERN Stack Developer", image: "../../../member_6.png", linkedin: "#", twitter: "#" },
+  { name: "Nabin Shrestha", role: "UI/UX Expert / Video Editor", image: "../../../member_7.png", linkedin: "#", twitter: "#" },
+  { name: "Abishek Prajapati", role: "Creative Head", image: "../../../member_5.png", linkedin: "#", twitter: "#" },
+  { name: "Sumit Nhemhafuki", role: "WordPress Developer", image: "../../../member_8.png", linkedin: "#", twitter: "#" },
+  { name: "Pawan Bhattarai", role: "QA", image: "../../../member_10.png", linkedin: "#", twitter: "#" },
+  { name: "Alish Prajapati", role: "Content Writer / SEO Expert", image: "../../../member_4.png", linkedin: "#", twitter: "#" }
 ];
 
 const Team = () => {
